@@ -13,10 +13,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcumb-content">
-                        <h1 class="breadcumb-title">About Us</h1>
+                        <h1 class="breadcumb-title">Sobre nós</h1>
                         <ul class="breadcumb-menu">
-                            <li><a href="index.html">HOME</a></li>
-                            <li class="active">ABOUT US</li>
+                            <li><a href="index.html">INÍCIO</a></li>
+                            <li class="active">SOBRE NÓS</li>
                         </ul>
                     </div>
                 </div>
@@ -34,39 +34,39 @@
                 <div class="col-lg-6 order-lg-2 text-lg-end">
                     <div class="about-thumb mb-5 mb-lg-0">
                         <img class="about-img-1" src="{{ asset('img/normal/about_1-1.png') }}" alt="img">
-                        <img class="about-img-2 jump" src="{{ asset('img/normal/about_1-1.png') }}assets/img/normal/about_1-2.png" alt="img">
+                        <img class="about-img-2 jump" src="{{ asset('img/normal/about_1-2.png') }}" alt="img">
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div class="about-content-wrap">
                         <div class="title-area mb-0">
-                            <span class="sub-title">More About Us</span>
+                            <span class="sub-title">Mais Sobre Nós</span>
                             <h2 class="sec-title">Unlock Your Full Potential,
                                 Achieve Your Goals.</h2>
                             <p class="sec-text">Welcome to Fitmas. your ultimate destination for achieving your fitness goals. We understand the importance of leading a healthy lifestyle and provide a top-notch fitness facility to support you in your fitness journey.
                             </p>
                             <div class="about-tab-1">
                                 <div class="filter-menu-active">
-                                    <button data-filter=".cat1" class="active" type="button">Our Mission</button>
-                                    <button data-filter=".cat2" type="button">Our Vision</button>
-                                    <button data-filter=".cat3" type="button">Our Goal</button>
+                                    <button data-filter=".cat1" class="active" type="button">Nossa Missão</button>
+                                    <button data-filter=".cat2" type="button">Nossa Missão</button>
+                                    <button data-filter=".cat3" type="button">Nosso Objetivo</button>
                                 </div>
                                 <div class="filter-active-cat1">
                                     <div class="filter-item cat1">
                                         <div class="about-tab-icon">
-                                            <img src="{{ asset('img/normal/about_1-1.png') }}assets/img/icon/about-icon.svg" alt="img">
+                                            <img src="{{ asset('img/icon/about-icon.svg') }}" alt="img">
                                         </div>
                                         <p class="about-tab-text">Gyms play a vital role in promoting an active and healthy lifestyle. They provide a supportive and motivating environment for individuals to engage in regular physical activity.</p>
                                     </div>
                                     <div class="filter-item cat2">
                                         <div class="about-tab-icon">
-                                            <img src="{{ asset('img/normal/about_1-1.png') }}assets/img/icon/about-icon.svg" alt="img">
+                                            <img src="{{ asset('img/icon/about-icon.svg') }}" alt="img">
                                         </div>
                                         <p class="about-tab-text">Gyms play a vital role in promoting an active and healthy lifestyle. They provide a supportive and motivating environment for individuals to engage in regular physical activity.</p>
                                     </div>
                                     <div class="filter-item cat3">
                                         <div class="about-tab-icon">
-                                            <img src="{{ asset('img/normal/about_1-1.png') }}assets/img/icon/about-icon.svg" alt="img">
+                                            <img src="{{ asset('img/icon/about-icon.svg') }}" alt="img">
                                         </div>
                                         <p class="about-tab-text">Gyms play a vital role in promoting an active and healthy lifestyle. They provide a supportive and motivating environment for individuals to engage in regular physical activity.</p>
                                     </div>
@@ -74,11 +74,11 @@
                             </div>
                         </div>
                         <div class="btn-wrap mt-40">
-                            <a href="about.html" class="btn">Make Appointment</a>
+                            <a href="about.html" class="btn">Marcar uma consulta</a>
                             <div class="about-info-wrap">
                                 <div class="icon"><i class="fas fa-phone-volume"></i></div>
                                 <div class="details">
-                                    <p class="about-info-title">Need Help?</p>
+                                    <p class="about-info-title">Precisa de ajuda?</p>
                                     <a class="about-info-link" href="tel:+25825692582">(+258) 2569 2582</a>
                                 </div>
                             </div>
@@ -95,7 +95,7 @@
     <div class="service-area-2 space-bottom overflow-hidden">
         <div class="container">
             <div class="title-area text-center">
-                <span class="sub-title">Our Services</span>
+                <span class="sub-title">Nossos Serviços</span>
                 <h2 class="sec-title">Service We Provide</h2>
             </div>
         </div>
@@ -104,52 +104,13 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-card style2">
                         <div class="service-card_icon">
-                            <img src="{{ asset('img/normal/about_1-1.png') }}assets/img/icon/service-icon_2-1.svg" alt="img">
+                            <img src="{{ asset('img/icon/service-icon_2-1.svg') }}" alt="img">
                         </div>
                         <div class="service-card_content">
-                            <h4 class="service-card_title h5"><a href="service-details.html">Gym Fitness Class</a></h4>
+                            <h4 class="service-card_title h5"><a href="{{ url('/service-details') }}">Gym Fitness Class</a></h4>
                             <p class="service-card_text">High-intensity workouts that alternate between intense bursts of exercise and
                                 short recovery periods...</p>
-                            <a href="service-details.html" class="link-btn" tabindex="0"><i class="fas fa-arrow-right"></i> Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card style2">
-                        <div class="service-card_icon">
-                            <img src="{{ asset('img/normal/about_1-1.png') }}assets/img/icon/service-icon_2-2.svg" alt="img">
-                        </div>
-                        <div class="service-card_content">
-                            <h4 class="service-card_title h5"><a href="service-details.html">Power Lifting</a></h4>
-                            <p class="service-card_text">High-intensity workouts that alternate between intense bursts of exercise and
-                                short recovery periods...</p>
-                            <a href="service-details.html" class="link-btn" tabindex="0"><i class="fas fa-arrow-right"></i> Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card style2">
-                        <div class="service-card_icon">
-                            <img src="{{ asset('img/normal/about_1-1.png') }}assets/img/icon/service-icon_2-3.svg" alt="img">
-                        </div>
-                        <div class="service-card_content">
-                            <h4 class="service-card_title h5"><a href="service-details.html">Body Building</a></h4>
-                            <p class="service-card_text">High-intensity workouts that alternate between intense bursts of exercise and
-                                short recovery periods...</p>
-                            <a href="service-details.html" class="link-btn" tabindex="0"><i class="fas fa-arrow-right"></i> Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card style2">
-                        <div class="service-card_icon">
-                            <img src="{{ asset('img/normal/about_1-1.png') }}assets/img/icon/service-icon_2-1.svg" alt="img">
-                        </div>
-                        <div class="service-card_content">
-                            <h4 class="service-card_title h5"><a href="service-details.html">Gym Fitness Class</a></h4>
-                            <p class="service-card_text">High-intensity workouts that alternate between intense bursts of exercise and
-                                short recovery periods...</p>
-                            <a href="service-details.html" class="link-btn" tabindex="0"><i class="fas fa-arrow-right"></i> Read More</a>
+                            <a href="{{ url('/service-details') }}" class="link-btn" tabindex="0"><i class="fas fa-arrow-right"></i> Read More</a>
                         </div>
                     </div>
                 </div>
@@ -172,7 +133,46 @@
                             <img src="{{ asset('img/icon/service-icon_2-3.svg') }}" alt="img">
                         </div>
                         <div class="service-card_content">
-                            <h4 class="service-card_title h5"><a href="service-details.html">Body Building</a></h4>
+                            <h4 class="service-card_title h5"><a href="{{ url('/service-details') }}">Body Building</a></h4>
+                            <p class="service-card_text">High-intensity workouts that alternate between intense bursts of exercise and
+                                short recovery periods...</p>
+                            <a href="{{ url('/service-details') }}" class="link-btn" tabindex="0"><i class="fas fa-arrow-right"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card style2">
+                        <div class="service-card_icon">
+                            <img src="{{ asset('img/icon/service-icon_2-1.svg') }}" alt="img">
+                        </div>
+                        <div class="service-card_content">
+                            <h4 class="service-card_title h5"><a href="service-details.html">Gym Fitness Class</a></h4>
+                            <p class="service-card_text">High-intensity workouts that alternate between intense bursts of exercise and
+                                short recovery periods...</p>
+                            <a href="service-details.html" class="link-btn" tabindex="0"><i class="fas fa-arrow-right"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card style2">
+                        <div class="service-card_icon">
+                            <img src="{{ asset('img/icon/service-icon_2-2.svg') }}" alt="img">
+                        </div>
+                        <div class="service-card_content">
+                            <h4 class="service-card_title h5"><a href="{{ url('/service-details') }}">Power Lifting</a></h4>
+                            <p class="service-card_text">High-intensity workouts that alternate between intense bursts of exercise and
+                                short recovery periods...</p>
+                            <a href="service-details.html" class="link-btn" tabindex="0"><i class="fas fa-arrow-right"></i> Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card style2">
+                        <div class="service-card_icon">
+                            <img src="{{ asset('img/icon/service-icon_2-3.svg') }}" alt="img">
+                        </div>
+                        <div class="service-card_content">
+                            <h4 class="service-card_title h5"><a href="{{ url('/service-details') }}">Body Building</a></h4>
                             <p class="service-card_text">High-intensity workouts that alternate between intense bursts of exercise and
                                 short recovery periods...</p>
                             <a href="service-details.html" class="link-btn" tabindex="0"><i class="fas fa-arrow-right"></i> Read More</a>
@@ -245,7 +245,7 @@
                             <img src="{{ asset('img/team/team-2.png') }}" alt="img">
                         </div>
                         <div class="team-card_content">
-                            <h4 class="team-card_title"><a href="team-details.html">Mike Johnson</a>
+                            <h4 class="team-card_title"><a href="{{ url('/team-details') }}">Mike Johnson</a>
                             </h4>
                             <span class="team-card_desig">CEO/Founder</span>
                             <div class="social-btn">
@@ -259,7 +259,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img src="{{ asset('assets/img/team/team-3.png') }}" alt="img">
+                            <img src="{{ asset('img/team/team-3.png') }}" alt="img">
                         </div>
                         <div class="team-card_content">
                             <h4 class="team-card_title"><a href="team-details.html">Amelia Harper</a>
@@ -276,10 +276,10 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img src="{{ asset('assets/img/team/team-4.png') }}" alt="img">
+                            <img src="{{ asset('img/team/team-4.png') }}" alt="img">
                         </div>
                         <div class="team-card_content">
-                            <h4 class="team-card_title"><a href="team-details.html">Oliver Samuel</a>
+                            <h4 class="team-card_title"><a href="{{ url('/team-details') }}">Oliver Samuel</a>
                             </h4>
                             <span class="team-card_desig">CEO/Founder</span>
                             <div class="social-btn">
@@ -293,10 +293,10 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img src="{{ asset('assets/img/team/team-1.png') }}" alt="img">
+                            <img src="{{ asset('img/team/team-1.png') }}" alt="img">
                         </div>
                         <div class="team-card_content">
-                            <h4 class="team-card_title"><a href="team-details.html">George Thomas</a>
+                            <h4 class="team-card_title"><a href="{{ url('/team-details') }}">George Thomas</a>
                             </h4>
                             <span class="team-card_desig">CEO/Founder</span>
                             <div class="social-btn">
@@ -310,10 +310,10 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img src="{{ asset('assets/img/team/team-2.png') }}" alt="img">
+                            <img src="{{ asset('img/team/team-2.png') }}" alt="img">
                         </div>
                         <div class="team-card_content">
-                            <h4 class="team-card_title"><a href="team-details.html">Mike Johnson</a>
+                            <h4 class="team-card_title"><a href="{{ url('/team-details') }}">Mike Johnson</a>
                             </h4>
                             <span class="team-card_desig">CEO/Founder</span>
                             <div class="social-btn">
@@ -327,10 +327,10 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img src="{{ asset('assets/img/team/team-3.png') }}" alt="img">
+                            <img src="{{ asset('img/team/team-3.png') }}" alt="img">
                         </div>
                         <div class="team-card_content">
-                            <h4 class="team-card_title"><a href="team-details.html">Amelia Harper</a>
+                            <h4 class="team-card_title"><a href="{{ url('/team-details') }}">Amelia Harper</a>
                             </h4>
                             <span class="team-card_desig">CEO/Founder</span>
                             <div class="social-btn">
@@ -344,10 +344,10 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img src="{{ asset('assets/img/team/team-4.png') }}" alt="img">
+                            <img src="{{ asset('img/team/team-4.png') }}" alt="img">
                         </div>
                         <div class="team-card_content">
-                            <h4 class="team-card_title"><a href="team-details.html">Oliver Samuel</a>
+                            <h4 class="team-card_title"><a href="{{ url('/team-details') }}">Oliver Samuel</a>
                             </h4>
                             <span class="team-card_desig">CEO/Founder</span>
                             <div class="social-btn">

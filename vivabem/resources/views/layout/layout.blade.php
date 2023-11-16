@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>@yield('title') - Fitmas Gym & Fitness</title>
+    <title>@yield('title') - Academia Vivabem</title>
     <meta name="description" content="Fitmas - Gym & Fitness HTML Template">
     <meta name="keywords" content="Fitmas - Gym & Fitness HTML Template">
     <meta name="robots" content="INDEX,FOLLOW">
@@ -75,7 +75,7 @@
                     <div class="footer-logo">
                         <a href="index.html"><img src="{{ asset('img/logo-white.svg') }}" alt="Fitmas"></a>
                     </div>
-                    <p class="about-text">A gym, also known as a fitness center or health club, is a facility dedicated to physical fitness and exercise gyms and typically offer a range</p>
+                    <p class="about-text">Uma academia, também conhecida como centro de fitness ou clube de saúde, é uma instalação dedicada à saúde física e ao exercício, geralmente oferecendo uma variedade.</p>
                     <div class="social-btn">
                         <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
@@ -89,13 +89,14 @@
                 <ul class="menu">
                     <li><a href="{{ url('/about') }}">Sobre nós</a></li>
                     <li><a href="{{ url('/project-details') }}">Nossa Missão</a></li>
-                    <li><a href="{{ url('/team') }}">Meet The Teams</a></li>
+                    <li><a href="{{ url('/team') }}">Conheça As Equipes</a></li>
                     <li><a href="{{ url('/project') }}">Nossos Projetos</a></li>
                     <li><a href="{{ url('/contact') }}">Contato</a></li>
                 </ul>
             </div>
         </div>
     </div>
+
 
     <!--==============================
     Mobile Menu
@@ -109,7 +110,7 @@
             <div class="mobile-menu">
                 <ul>
                     <li class="menu-item-has-children">
-                        <a href="#">Home</a>
+                        <a href="#">Início</a>
                         <ul class="sub-menu">
                             <li>
                                 <a href="{{ url('/index') }}">Home 01</a>
@@ -178,8 +179,8 @@
                     <div class="col-auto d-none d-lg-block">
                         <div class="header-links">
                             <ul>
-                                <li><i class="far fa-envelope"></i><a href="mailto:info@gmail.com">support@gmail.com</a></li>
-                                <li><i class="far fa-clock"></i>Mon - Sat: 8.00 am-7.00 pm</li>
+                                <li><i class="far fa-envelope"></i><a href="mailto:info@gmail.com">suporte@gmail.com</a></li>
+                                <li><i class="far fa-clock"></i>Seg - Sab: 8.00 am-7.00 pm</li>
                             </ul>
                         </div>
                     </div>
@@ -214,28 +215,20 @@
                         <div class="col-auto m-lg-auto">
                             <nav class="main-menu d-none d-lg-inline-block">
                                 <ul>
-                                    <li class="menu-item-has-children">
-                                        <a href="{{ url('/') }}">Home</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="{{ url('/') }}">Home</a>
-                                            </li>
-                                            {{-- <li>
-                                                <a href="{{ url('/home-2') }}">Home 02</a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ url('/home-3') }}">Home 03</a>
-                                            </li> --}}
-                                        </ul>
+                                    <li>
+                                        <a href="{{ url('/') }}">Início</a>
                                     </li>
                                     <li>
                                         <a href="{{ url('/about') }}">Sobre</a>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="{{ url('/service') }}">Serviços</a>
+                                        <a href="{{ url('/service') }}">Modalidade</a>
                                         <ul class="sub-menu">
-                                            <li><a href="{{ url('/service') }}">Serviços</a></li>
-                                            <li><a href="{{ url('/service-details') }}">Serviços Detalhes</a></li>
+                                            <li><a href="{{ url('/modalidade/musculacao') }}">Musculação</a></li>
+                                            <li><a href="{{ url('/aerobica') }}">Aeróbica</a></li>
+                                            <li><a href="{{ url('/pilates') }}">Pilates</a></li>
+                                            <li><a href="{{ url('/yoga') }}">Yoga</a></li>
+                                            <li><a href="{{ url('/treinamento-funcional') }}">Treinamento Funcional</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
@@ -258,8 +251,7 @@
                                         <a href="{{ url('/blog') }}">Blog</a>
                                         <ul class="sub-menu">
                                             <li><a href="{{ url('/blog') }}">Blog</a></li>
-                                            <li><a href="{{ url('/blog-2') }}">Blog 02</a></li>
-                                            <li><a href="{{ url('/blog-details') }}">Blog Details</a></li>
+                                            <li><a href="{{ url('/blog-details') }}">Blog Detalhes</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -279,7 +271,7 @@
                         <div class="col-auto d-none d-lg-block">
                             <div class="header-button">
                                 <a href="{{ url('/contact') }}" class="btn style2 style-r0 d-xl-block d-none">
-                                    Get a Quote
+                                    Fazer um Orçamento
                                 </a>
                                 <button type="button" class="btn style-r0 btn-border3 sideMenuToggler">
                                     <i class="far fa-bars"></i>
@@ -313,7 +305,7 @@
                                 <div class="footer-logo">
                                     <a href="index.html"><img src="{{ asset('img/logo-white.svg') }}" alt="Fitmas"></a>
                                 </div>
-                                <p class="about-text">A gym, also known as a fitness center or health club, is a facility dedicated to physical fitness and exercise gyms and typically offer a range</p>
+                                <p class="about-text">Uma academia, também conhecida como centro de fitness ou clube de saúde, é uma instalação dedicada à atividade física e ao exercício, oferecendo uma variedade de opções...</p>
                                 <div class="social-btn">
                                     <a href="https://twitter.com/" tabindex="0"><i class="fab fa-twitter"></i></a>
                                     <a href="https://linkedin.com/" tabindex="0"><i class="fab fa-linkedin-in"></i></a>
@@ -324,44 +316,44 @@
                     </div>
                     <div class="col-md-6 col-xl-auto">
                         <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Quick Links</h3>
+                            <h3 class="widget_title">Links Rápidos</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
                                     <li><a href="{{ url('/about.php') }}">Sobre nós</a></li>
                                     <li><a href="{{ url('/service-details') }}">Nossa missão</a></li>
-                                    <li><a href="{{ url('/team') }}">Meet The Teams</a></li>
+                                    <li><a href="{{ url('/team') }}">Conheça a Equipe</a></li>
                                     <li><a href="{{ url('/project') }}">Nossos Projetos</a></li>
-                                    <li><a href="{{ url('/contact') }}">Contate-nos</a></li>
+                                    <li><a href="{{ url('/contact') }}">Entre em contato</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-auto">
                         <div class="widget footer-widget">
-                            <h3 class="widget_title">Gallery</h3>
+                            <h3 class="widget_title">Galeria</h3>
                             <div class="sidebar-gallery">
                                 <div class="gallery-thumb">
-                                    <img src="{{ asset('img/widget/insta-feed1.png') }}" alt="Gallery Image">
+                                    <img src="{{ asset('img/widget/insta-feed1.png') }}" alt="Imagem da Galeria">
                                     <a href="{{ asset('img/widget/insta-feed1.png') }}" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="{{ asset('img/widget/insta-feed2.png') }}" alt="Gallery Image">
+                                    <img src="{{ asset('img/widget/insta-feed2.png') }}" alt="Imagem da Galeria">
                                     <a href="{{ asset('img/widget/insta-feed2.png') }}" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="{{ asset('img/widget/insta-feed3.png') }}" alt="Gallery Image">
+                                    <img src="{{ asset('img/widget/insta-feed3.png') }}" alt="Imagem da Galeria">
                                     <a href="{{ asset('img/widget/insta-feed3.png') }}" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="{{ asset('img/widget/insta-feed4.png') }}" alt="Gallery Image">
+                                    <img src="{{ asset('img/widget/insta-feed4.png') }}" alt="Imagem da Galeria">
                                     <a href="{{ asset('img/widget/insta-feed4.png') }}" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="{{ asset('img/widget/insta-feed5.png') }}" alt="Gallery Image">
+                                    <img src="{{ asset('img/widget/insta-feed5.png') }}" alt="Imagem da Galeria">
                                     <a href="{{ asset('img/widget/insta-feed5.png') }}" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="{{ asset('img/widget/insta-feed6.png') }}" alt="Gallery Image">
+                                    <img src="{{ asset('img/widget/insta-feed6.png') }}" alt="Imagem da Galeria">
                                     <a href="{{ asset('img/widget/insta-feed6.png') }}" class="gallery-btn popup-image"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
@@ -369,14 +361,14 @@
                     </div>
                     <div class="col-md-6 col-xl-3">
                         <div class="widget footer-widget">
-                            <h3 class="widget_title">Get Newsletter</h3>
-                            <p class="footer-text">Get 10% off your first order! Hurry up</p>
+                            <h3 class="widget_title">Receba Newsletter</h3>
+                            <p class="footer-text">Receba 10% de desconto em seu primeiro pedido! Aproveite</p>
                             <form class="newsletter-form">
                                 <div class="form-group">
                                     <i class="far fa-envelope"></i>
-                                    <input class="form-control" type="email" placeholder="Email Address" required="">
+                                    <input class="form-control" type="email" placeholder="Endereço de e-mail" required="">
                                 </div>
-                                <button type="submit" class="btn style-r0 style2">Subscribe</button>
+                                <button type="submit" class="btn style-r0 style2">Inscrever-se</button>
                             </form>
                         </div>
                     </div>
@@ -385,8 +377,8 @@
         </div>
         <div class="copyright-wrap">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-auto align-self-center"><p class="copyright-text text-center">© 2023 <a href="#">Fitmas.</a> All Rights Reserved.</p></div>
+                <div class "row justify-content-center">
+                    <div class="col-auto align-self-center"><p class="copyright-text text-center">© 2023 <a href="#">Fitmas.</a> Todos os direitos reservados.</p></div>
                 </div>
             </div>
         </div>

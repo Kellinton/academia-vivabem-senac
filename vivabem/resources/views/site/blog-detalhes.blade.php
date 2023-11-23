@@ -1,6 +1,6 @@
 @extends('layout.layout')
 
-@section('title','Blog Details')
+@section('title','Blog-Detalhes')
 
 @section('conteudo')
 
@@ -273,7 +273,7 @@
                 </div>
             </div>
         </div>
-    </section>   
+    </section>
 
 @endsection
 

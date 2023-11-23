@@ -8,16 +8,16 @@
     <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcrumb-bg.png">
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('img/bg/breadcrumb-bg.png') }}">
         <!-- bg animated image/ -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcumb-content">
-                        <h1 class="breadcumb-title">Our Blogs</h1>
+                        <h1 class="breadcumb-title">Nosso Blog</h1>
                         <ul class="breadcumb-menu">
-                            <li><a href="index.html">HOME</a></li>
-                            <li class="active">BLOG PAGE</li>
+                            <li><a href="{{ url('/') }}">INÍCIO</a></li>
+                            <li class="active">PÁGINA DO BLOG</li>
                         </ul>
                     </div>
                 </div>
@@ -35,89 +35,88 @@
                 <div class="col-xl-8 col-lg-7">
                     <div class="blog-card style2">
                         <div class="blog-img">
-                            <img src="assets/img/blog/blog_s2_1.png" alt="blog image">
+                            <img src="{{ asset('img/blog/blog_s2_1.png') }}" alt="blog image">
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="blog.html">JUNE 15, 2023</a>
-                                <a href="blog.html">SHOPPING</a>
+                                <a href="{{ url('/blog') }}">15 DE JUNHO DE 2023</a>
+                                <a href="{{ url('/blog') }}">COMPRAS</a>
                             </div>
-                            <h3 class="blog-title box-title"><a href="blog-details.html">Mastering the Machines: A Beginner's Guide
-                                to Gym Equipment</a></h3>
-                            <a href="blog-details.html" class="link-btn style2"><i class="fas fa-arrow-right"></i> READ MORE</a>
+                            <h3 class="blog-title box-title"><a href="{{ url('/blog-detalhes') }}">Dominando as máquinas: um guia para iniciantes em equipamentos de ginástica</a></h3>
+                            <a href="{{ url('/blog-detalhes') }}" class="link-btn style2"><i class="fas fa-arrow-right"></i>LER MAIS</a>
                         </div>
                     </div>
                     <div class="blog-card style2">
                         <div class="blog-img">
-                            <img src="assets/img/blog/blog_s2_2.png" alt="blog image">
+                            <img src="{{ asset('img/blog/blog_s2_2.png') }}" alt="blog image">
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="blog.html">JUNE 15, 2023</a>
-                                <a href="blog.html">SHOPPING</a>
+                                <a href="{{ url('/blog') }}">15 DE JUNHO DE 2023</a>
+                                <a href="{{ url('/blog') }}">COMPRAS</a>
                             </div>
-                            <h3 class="blog-title box-title"><a href="blog-details.html">Mastering the Gym: Essential Strategies for Maximizing Your Workouts</a></h3>
-                            <a href="blog-details.html" class="link-btn style2"><i class="fas fa-arrow-right"></i> READ MORE</a>
+                            <h3 class="blog-title box-title"><a href="{{ url('/blog-detalhes') }}">Dominando a academia: estratégias essenciais para maximizar seus treinos</a></h3>
+                            <a href="{{ url('/blog-detalhes') }}" class="link-btn style2"><i class="fas fa-arrow-right"></i>LER MAIS</a>
                         </div>
                     </div>
                     <div class="blog-card style2">
                         <div class="blog-img">
-                            <img src="assets/img/blog/blog_s2_3.png" alt="blog image">
+                            <img src="{{ asset('img/blog/blog_s2_3.png') }}" alt="blog image">
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="blog.html">JUNE 15, 2023</a>
-                                <a href="blog.html">SHOPPING</a>
+                                <a href="{{ url('/blog') }}">15 DE JUNHO DE 2023</a>
+                                <a href="{{ url('/blog') }}">COMPRAS</a>
                             </div>
-                            <h3 class="blog-title box-title"><a href="blog-details.html">Breaking the Sweat Barrier: Embrace the Challenge of Fitness at Fitmas</a></h3>
-                            <a href="blog-details.html" class="link-btn style2"><i class="fas fa-arrow-right"></i> READ MORE</a>
+                            <h3 class="blog-title box-title"><a href="{{ url('/blog-detalhes') }}">Quebrando a barreira do suor: aceite o desafio do condicionamento físico na Vivabem</a></h3>
+                            <a href="{{ url('/blog-detalhes') }}" class="link-btn style2"><i class="fas fa-arrow-right"></i>LER MAIS</a>
                         </div>
                     </div>
                     <div class="blog-card style2">
                         <div class="blog-img">
-                            <img src="assets/img/blog/blog_s2_4.png" alt="blog image">
+                            <img src="{{ asset('img/blog/blog_s2_4.png') }}" alt="blog image">
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="blog.html">JUNE 15, 2023</a>
-                                <a href="blog.html">SHOPPING</a>
+                                <a href="{{ url('/blog') }}">15 DE JUNHO DE 2023</a>
+                                <a href="{{ url('/blog') }}">COMPRAS</a>
                             </div>
-                            <h3 class="blog-title box-title"><a href="blog-details.html">Fuel Your Fitness Journey: Nutrition Tips and Advice for Gym Goers</a></h3>
-                            <a href="blog-details.html" class="link-btn style2"><i class="fas fa-arrow-right"></i> READ MORE</a>
+                            <h3 class="blog-title box-title"><a href="{{ url('/blog-detalhes') }}">Abasteça sua jornada de condicionamento físico: dicas e conselhos nutricionais para frequentadores de academia</a></h3>
+                            <a href="{{ url('/blog-detalhes') }}" class="link-btn style2"><i class="fas fa-arrow-right"></i>LER MAIS</a>
                         </div>
                     </div>
                     <div class="blog-card style2">
                         <div class="blog-img">
-                            <img src="assets/img/blog/blog_s2_5.png" alt="blog image">
+                            <img src="{{ asset('img/blog/blog_s2_5.png') }}" alt="blog image">
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="blog.html">JUNE 15, 2023</a>
-                                <a href="blog.html">SHOPPING</a>
+                                <a href="{{ url('/blog') }}">15 DE JUNHO DE 2023</a>
+                                <a href="{{ url('/blog') }}">COMPRAS</a>
                             </div>
-                            <h3 class="blog-title box-title"><a href="blog-details.html">Unleash Your Inner Athlete: Uncover Your True Potential at Fitmas</a></h3>
-                            <a href="blog-details.html" class="link-btn style2"><i class="fas fa-arrow-right"></i> READ MORE</a>
+                            <h3 class="blog-title box-title"><a href="{{ url('/blog-detalhes') }}">Liberte o seu atleta interior: descubra o seu verdadeiro potencial no Vivabem</a></h3>
+                            <a href="{{ url('/blog-detalhes') }}" class="link-btn style2"><i class="fas fa-arrow-right"></i>LER MAIS</a>
                         </div>
                     </div>
                     <div class="blog-card style2">
                         <div class="blog-img">
-                            <img src="assets/img/blog/blog_s2_6.png" alt="blog image">
+                            <img src="{{ asset('img/blog/blog_s2_6.png') }}" alt="blog image">
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="blog.html">JUNE 15, 2023</a>
-                                <a href="blog.html">SHOPPING</a>
+                                <a href="{{ url('/blog') }}">15 DE JUNHO DE 2023</a>
+                                <a href="{{ url('/blog') }}">COMPRAS</a>
                             </div>
-                            <h3 class="blog-title box-title"><a href="blog-details.html">Fuel Your Fitness Journey: Nutrition Tips and Advice for Gym Goers</a></h3>
-                            <a href="blog-details.html" class="link-btn style2"><i class="fas fa-arrow-right"></i> READ MORE</a>
+                            <h3 class="blog-title box-title"><a href="{{ url('/blog-detalhes') }}">Abasteça sua jornada de condicionamento físico: dicas e conselhos nutricionais para frequentadores de academia</a></h3>
+                            <a href="{{ url('/blog-detalhes') }}" class="link-btn style2"><i class="fas fa-arrow-right"></i>LER MAIS</a>
                         </div>
                     </div>
                     <div class="pagination">
                         <ul>
-                            <li><a href="blog.html">1</a></li>
-                            <li><a href="blog.html">2</a></li>
-                            <li><a href="blog.html">3</a></li>
-                            <li><a href="blog.html"><i class="fas fa-arrow-right"></i></a></li>
+                            <li><a href="{{ url('/blog') }}">1</a></li>
+                            <li><a href="{{ url('/blog') }}">2</a></li>
+                            <li><a href="{{ url('/blog') }}">3</a></li>
+                            <li><a href="{{ url('/blog') }}"><i class="fas fa-arrow-right"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -126,45 +125,44 @@
                     <aside class="sidebar-area">
                         <div class="widget widget_search">
                             <form class="search-form">
-                                <input type="text" placeholder="Enter Keyword">
+                                <input type="text" placeholder="Insira a palavra-chave">
                                 <button type="submit"><i class="far fa-search"></i></button>
                             </form>
                         </div>
 
                         <div class="widget">
-                            <h3 class="widget_title">Recent Posts</h3>
+                            <h3 class="widget_title">Postagens recentes</h3>
                             <div class="recent-post-wrap">
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post1.png" alt="Blog Image"></a>
+                                        <a href="{{ url('/blog-detalhes') }}"><img src="{{ asset('img/blog/recent-post1.png') }}" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Essential Strategies for Maximizing Your</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="{{ url('/blog-detalhes') }}">Estratégias Essenciais Para Maximizar Seu</a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="blog.html">25 Jun, 2023</a>
+                                            <a href="blog.html">25 DE JUNHO DE 2023</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post2.png" alt="Blog Image"></a>
+                                        <a href="{{ url('/blog-detalhes') }}"><img src="{{ asset('img/blog/recent-post2.png') }}" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Functional training into
-                                            your Routine...</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="{{ url('/blog-detalhes') }}">Treinamento Funcional Na Sua Rotina...</a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="blog.html">25 Jun, 2023</a>
+                                            <a href="blog.html">25 DE JUNHO DE 2023</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post3.png" alt="Blog Image"></a>
+                                        <a href="{{ url('/blog-detalhes') }}"><img src="{{ asset('img/blog/recent-post3.png') }}" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Nutrition Tips Advice for Gym Goers</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="{{ url('/blog-detalhes') }}">Conselhos Sobre Dicas De Nutrição Para Frequentadores De Academia</a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="blog.html">25 Jun, 2023</a>
+                                            <a href="blog.html">25 DE JUNHO DE 2023</a>
                                         </div>
                                     </div>
                                 </div>
@@ -172,28 +170,28 @@
                         </div>
 
                         <div class="widget widget_categories">
-                            <h3 class="widget_title">Categories</h3>
+                            <h3 class="widget_title">Categorias</h3>
                             <ul>
                                 <li>
-                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>Boxing Training</a>
+                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>Treinamento de boxe</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>Body Building Class</a>
+                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>Aula de musculação</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>Meditation Class</a>
+                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>Aula de Meditação</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>Mental Yoga Training</a>
+                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>Treinamento de ioga mental</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>CrossFit Body Class</a>
+                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>Classe Corporal CrossFit</a>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="widget widget_gallery">
-                            <h3 class="widget_title">Project Gallery</h3>
+                            <h3 class="widget_title">Galeria de Projetos</h3>
                             <div class="insta-feed">
                                 <a href="blog.html"><img src="assets/img/widget/widget1-1.png" alt="img">
                                 <i class="fab fa-instagram"></i></a>
@@ -211,26 +209,26 @@
                         </div>
 
                         <div class="widget widget_tag_cloud">
-                            <h3 class="widget_title">Popular Tags</h3>
+                            <h3 class="widget_title">Tags populares</h3>
                             <div class="tagcloud">
-                                <a href="blog.html">ADVICE</a>
-                                <a href="blog.html">FIT</a>
-                                <a href="blog.html">AUTHOR</a>
-                                <a href="blog.html">FAMILY</a>
-                                <a href="blog.html">Fitmas</a>
-                                <a href="blog.html">HEALTH</a>
-                                <a href="blog.html">FITNESS</a>
-                                <a href="blog.html">GYM</a>
-                                <a href="blog.html">JUDGE</a>
-                                <a href="blog.html">SOLUTION</a>
-                                <a href="blog.html">TRAINING</a>
+                                <a href="{{ url('/blog') }}">CONSELHO</a>
+                                <a href="{{ url('/blog') }}">AJUSTAR/a>
+                                <a href="{{ url('/blog') }}">AUTOR</a>
+                                <a href="{{ url('/blog') }}">FAMÍLIA</a>
+                                <a href="{{ url('/blog') }}">Vivabem</a>
+                                <a href="{{ url('/blog') }}">SAÚDE</a>
+                                <a href="{{ url('/blog') }}">FITNESS</a>
+                                <a href="{{ url('/blog') }}">ACADEMIA</a>
+                                <a href="{{ url('/blog') }}">JUIZ</a>
+                                <a href="{{ url('/blog') }}">SOLUÇÃO</a>
+                                <a href="{{ url('/blog') }}">TREINAMENTO</a>
                             </div>
                         </div>
                     </aside>
                 </div>
             </div>
         </div>
-    </section>   
+    </section>
 
 
 @endsection

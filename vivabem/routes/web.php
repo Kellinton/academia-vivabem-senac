@@ -3,7 +3,9 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogDetailsController;
+use App\Http\Controllers\BlogDetalhesController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ContatoController;
 use App\Http\Controllers\ErrorController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\GalleryDetailsController;
@@ -17,6 +19,7 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ServiceDetailsController;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\ShopDetailsController;
+use App\Http\Controllers\SobreController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\TeamDetailsController;
 use Illuminate\Support\Facades\Route;
@@ -39,19 +42,9 @@ use SebastianBergmann\CodeCoverage\Report\Xml\Project;
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/about', [AboutController::class,'index'])->name('about');
+Route::get('/sobre', [SobreController::class, 'index'])->name('sobre');
+Route::get('/contato', [ContatoController::class, 'index'])->name('contato');
+Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+Route::get('/blog-detalhes', [BlogDetalhesController::class, 'index'])->name('blog-detalhes');
 Route::get('/modalidade', [ModalidadeController::class, 'index'])->name('modalidade');
 Route::get('/modalidade/musculacao', [ModalidadeController::class, 'musculacao'])->name('modalidade.musculacao');
-Route::get('/blog', [BlogController::class,'index'])->name('blog');
-Route::get('/blog-details', [BlogDetailsController::class,'index'])->name('blog-details');
-Route::get('/contact', [ContactController::class,'index'])->name('contact');
-Route::get('/error', [ErrorController::class,'index'])->name('error');
-Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
-Route::get('/pricing', [PricingController::class, 'index'])->name('index');
-Route::get('/project', [ProjectController::class, 'index'])->name('project');
-Route::get('/project-details', [ProjectDetailsController::class, 'index'])->name('project-details');
-Route::get('/shop', [ShopController::class, 'index'])->name('shop');
-Route::get('/shop-details', [ShopDetailsController::class, 'index'])->name('shop-details');
-Route::get('/team', [TeamController::class, 'index'])->name('team');
-Route::get('/team-details', [TeamDetailsController::class, 'index'])->name('team-details');
-

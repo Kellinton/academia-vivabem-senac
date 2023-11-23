@@ -87,11 +87,11 @@
             <div class="widget widget_nav_menu footer-widget">
                 <h3 class="widget_title">Nossos Links</h3>
                 <ul class="menu">
-                    <li><a href="{{ url('/about') }}">Sobre nós</a></li>
-                    <li><a href="{{ url('/project-details') }}">Nossa Missão</a></li>
-                    <li><a href="{{ url('/team') }}">Conheça As Equipes</a></li>
-                    <li><a href="{{ url('/project') }}">Nossos Projetos</a></li>
-                    <li><a href="{{ url('/contact') }}">Contato</a></li>
+                    <li><a href="{{ url('/sobre') }}">Sobre nós</a></li>
+                    <li><a href="{{ url('/projeto-detalhes') }}">Nossa Missão</a></li>
+                    <li><a href="{{ url('/equipe') }}">Conheça As Equipes</a></li>
+                    <li><a href="{{ url('/projeto') }}">Nossos Projetos</a></li>
+                    <li><a href="{{ url('/contato') }}">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -126,10 +126,10 @@
                     <li class="menu-item-has-children">
                         <a href="#">Pages</a>
                         <ul class="sub-menu">
-                            <li><a href="{{ url('/team') }}">Team Page</a></li>
-                            <li><a href="{{ url('/team-2') }}">Team Page 02</a></li>
-                            <li><a href="{{ url('/team-details') }}">Team Details</a></li>
-                            <li><a href="{{ url('/gallery') }}">Gallery Page</a></li>
+                            <li><a href="{{ url('/equipe') }}">Team Page</a></li>
+                            <li><a href="{{ url('/equipe-2') }}">Team Page 02</a></li>
+                            <li><a href="{{ url('/equipe-detalhes') }}">Team Details</a></li>
+                            <li><a href="{{ url('/galeria') }}">Gallery Page</a></li>
                             <li><a href="{{ url('/gallery-2') }}">Gallery Page 02</a></li>
                             <li><a href="{{ url('/project') }}">Project Page</a></li>
                             <li><a href="{{ url('/project-details') }}">Project Details</a></li>
@@ -156,13 +156,12 @@
                     <li class="menu-item-has-children">
                         <a href="#">Blog</a>
                         <ul class="sub-menu">
-                            <li><a href="{{ url('/project-details') }}blog.html">Blog</a></li>
-                            <li><a href="{{ url('/project-details') }}blog-2.html">Blog 02</a></li>
-                            <li><a href="{{ url('/project-details') }}blog-details.html">Blog Details</a></li>
+                            <li><a href="{{ url('/blog') }}">Blog</a></li>
+                            <li><a href="{{ url('/blog-detalhes') }}">Blog Detalhes</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="{{ url('/contact') }}">Contato</a>
+                        <a href="{{ url('/contato') }}">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -219,7 +218,7 @@
                                         <a href="{{ url('/') }}">Início</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('/about') }}">Sobre</a>
+                                        <a href="{{ url('/sobre') }}">Sobre</a>
                                     </li>
                                     <li class="menu-item-has-children">
                                         <a href="{{ url('/service') }}">Modalidade</a>
@@ -251,11 +250,11 @@
                                         <a href="{{ url('/blog') }}">Blog</a>
                                         <ul class="sub-menu">
                                             <li><a href="{{ url('/blog') }}">Blog</a></li>
-                                            <li><a href="{{ url('/blog-details') }}">Blog Detalhes</a></li>
+                                            <li><a href="{{ url('/blog-detalhes') }}">Blog Detalhes</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="{{ url('/contact') }}">Contato</a>
+                                        <a href="{{ url('/contato') }}">Contato</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -270,7 +269,7 @@
                         </div>
                         <div class="col-auto d-none d-lg-block">
                             <div class="header-button">
-                                <a href="{{ url('/contact') }}" class="btn style2 style-r0 d-xl-block d-none">
+                                <a href="{{ url('/contato') }}" class="btn style2 style-r0 d-xl-block d-none">
                                     Fazer um Orçamento
                                 </a>
                                 <button type="button" class="btn style-r0 btn-border3 sideMenuToggler">
@@ -319,11 +318,11 @@
                             <h3 class="widget_title">Links Rápidos</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="{{ url('/about.php') }}">Sobre nós</a></li>
+                                    <li><a href="{{ url('/sobre') }}">Sobre nós</a></li>
                                     <li><a href="{{ url('/service-details') }}">Nossa missão</a></li>
                                     <li><a href="{{ url('/team') }}">Conheça a Equipe</a></li>
                                     <li><a href="{{ url('/project') }}">Nossos Projetos</a></li>
-                                    <li><a href="{{ url('/contact') }}">Entre em contato</a></li>
+                                    <li><a href="{{ url('/contato') }}">Entre em contato</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -378,7 +377,7 @@
         <div class="copyright-wrap">
             <div class="container">
                 <div class "row justify-content-center">
-                    <div class="col-auto align-self-center"><p class="copyright-text text-center">© 2023 <a href="#">Fitmas.</a> Todos os direitos reservados.</p></div>
+                    <div class="col-auto align-self-center"><p class="copyright-text text-center">© 2023 <a href="#">Vivabem.</a> Todos os direitos reservados.</p></div>
                 </div>
             </div>
         </div>

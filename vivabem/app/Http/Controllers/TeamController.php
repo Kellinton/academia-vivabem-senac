@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class TeamController extends Controller
 {
     public function index(){
-        return view('site.team');
+        return view('site.equipe');
     }
 
 }

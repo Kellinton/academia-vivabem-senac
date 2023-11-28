@@ -7,17 +7,17 @@
  <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcrumb-bg.png">
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('img/bg/breadcrumb-bg.png') }}">
         <!-- bg animated image/ -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcumb-content">
-                        <h1 class="breadcumb-title">Blog Details</h1>
+                        <h1 class="breadcumb-title">Detalhes do Blog</h1>
                         <ul class="breadcumb-menu">
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="blog.html">BLOG</a></li>
-                            <li class="active">BLOG DETAILS</li>
+                            <li><a href="{{ url('/') }}">INÍCIO</a></li>
+                            <li><a href="{{ url('/blog') }}">BLOG</a></li>
+                            <li class="active">DETALHES DO BLOG</li>
                         </ul>
                     </div>
                 </div>
@@ -35,72 +35,72 @@
                 <div class="col-xxl-8 col-lg-7">
                     <div class="blog-single">
                         <div class="blog-thumb">
-                            <img src="assets/img/blog/blog_details1_1.png" alt="img">
+                            <img src="{{ asset('img/blog/blog_details1_1.png') }}" alt="img">
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="blog-details.html"><i class="far fa-clock"></i>25 JUNE, 2023</a>
-                                <a href="blog.html"><i class="far fa-user"></i>POST BY: ADMIN</a>
+                                <a href="{{ url('/blog-detalhes') }}"><i class="far fa-clock"></i>25 DE JUNHO DE 2023</a>
+                                <a href="{{ url('/blog') }}"><i class="far fa-user"></i>POST POR: ADMIN</a>
                             </div>
-                            <h2 class="blog-title">Strategies for Maximizing Your Workouts</h2>
-                            <p class="mb-30">Our gym team members are not only passionate about fitness but also about fostering a sense of community within our gym. They create a warm and inclusive environment where members feel welcomed, supported, and connected. They organize group activities, challenges, and events that bring our members together, encouraging camaraderie, friendly competition, and mutual support.
+                            <h2 class="blog-title">Estratégias para maximizar seus treinos</h2>
+                            <p class="mb-30">Os membros da nossa equipe de academia não são apenas apaixonados por fitness, mas também por promover um senso de comunidade em nossa academia. Eles criam um ambiente caloroso e inclusivo onde os membros se sentem bem-vindos, apoiados e conectados. Eles organizam atividades em grupo, desafios e eventos que unem nossos membros, incentivando a camaradagem, a competição amigável e o apoio mútuo.
                             </p>
-                            <p>We understand that every individual is unique, with different goals, abilities, and preferences. Our gym team members excel in providing a personalized approach to your fitness journey. They take the time to listen, assess, and customize your workouts and programs to ensure they align with your objectives and fit your lifestyle. This personalized attention allows for a more effective and rewarding fitness</p>
+                            <p>Entendemos que cada indivíduo é único, com objetivos, habilidades e preferências diferentes. Os membros da nossa equipe de ginástica se destacam em fornecer uma abordagem personalizada para sua jornada de condicionamento físico. Eles reservam um tempo para ouvir, avaliar e personalizar seus treinos e programas para garantir que estejam alinhados com seus objetivos e adequados ao seu estilo de vida. Esta atenção personalizada permite um condicionamento físico mais eficaz e gratificante</p>
                             <blockquote>
-                                <p>We offer discounted membership options for students and seniors who want to prioritize their health</p>
+                                <p>Oferecemos opções de assinatura com desconto para estudantes e idosos que desejam priorizar sua saúde</p>
                                 <cite>William Benjamin</cite>
-                                <span class="desig">Top Author</span>
+                                <span class="desig">Autor Principal</span>
                             </blockquote>
-                            <p class="mb-30">Our standard membership provides access to our gym facilities during regular operating hours. This option is ideal for individuals who prefer independent workouts and want to make use of our state-of-the-art equipment and amenities. For those seeking an elevated gym experience, our premium membership offers additional perks and benefits. Along with access to all our gym facilities, premium members enjoy exclusive privileges such as priority class reservations, complimentary towel service, and access to specialized training programs or workshops.</p>
-                            <p class="mb-35">We understand the importance of fitness for the whole family. Our family membership option allows multiple family members to join under a single membership, making it a cost-effective choice. This option encourages a healthy and active lifestyle for everyone in your household.</p>
+                            <p class="mb-30">Nossa associação padrão fornece acesso às nossas instalações da academia durante o horário normal de funcionamento. Esta opção é ideal para quem prefere treinos independentes e deseja usufruir de nossos equipamentos e comodidades de última geração. Para aqueles que buscam uma experiência elevada na academia, nossa assinatura premium oferece vantagens e vantagens adicionais. Juntamente com o acesso a todas as nossas instalações de academia, os membros premium desfrutam de privilégios exclusivos, como reservas de aulas prioritárias, serviço de toalhas gratuito e acesso a programas de treinamento ou workshops especializados.</p>
+                            <p class="mb-35">Compreendemos a importância do condicionamento físico para toda a família. Nossa opção de associação familiar permite que vários membros da família se unam em uma única associação, tornando-a uma opção econômica. Esta opção incentiva um estilo de vida saudável e ativo para todos na sua casa.</p>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="thumb mb-sm-0 mb-30">
-                                        <img src="assets/img/blog/blog_details1_2.png" alt="img">
+                                        <img src="{{ asset('img/blog/blog_details1_2.png') }}" alt="img">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="thumb">
-                                        <img src="assets/img/blog/blog_details1_3.png" alt="img">
+                                        <img src="{{ asset('img/blog/blog_details1_3.png') }}" alt="img">
                                     </div>
                                 </div>
                             </div>
-                            <p class="mt-35">We offer discounted membership options for students and seniors who want to prioritize their health and fitness. These specialized memberships are designed to make fitness accessible and affordable for these specific groups. If you're visiting the area or want to bring a friend along for a workout, we offer day passes and guest passes. These options allow temporary access to our gym facilities and give you a chance to experience what Fitmas has to offer.</p>
+                            <p class="mt-35">Oferecemos opções de assinatura com desconto para estudantes e idosos que desejam priorizar sua saúde e preparo físico. Essas associações especializadas são projetadas para tornar o condicionamento físico acessível e acessível para esses grupos específicos. Se você estiver visitando a região ou quiser trazer um amigo para se exercitar, oferecemos passes diários e passes para convidados. Estas opções permitem o acesso temporário às nossas instalações de ginásio e dão-lhe a oportunidade de experimentar o que Fitmas tem para oferecer.</p>
                         </div>
                         <div class="share-links clearfix ">
                             <span class="share-links-title">Tags:</span>
                             <div class="tagcloud">
-                                <a href="blog.html">ADVICE</a>
-                                <a href="blog.html">FIT</a>
-                                <a href="blog.html">AUTHOR</a>
-                                <a href="blog.html">FAMILY</a>
+                                <a href="blog.html">CONSELHO</a>
+                                <a href="blog.html">AJUSTAR</a>
+                                <a href="blog.html">AUTOR</a>
+                                <a href="blog.html">FAMÍLIA</a>
                             </div>
                         </div>
                         <div class="blog-author bg-smoke2">
                             <div class="auhtor-img">
-                                <img src="assets/img/blog/blog-author.png" alt="Blog Author Image">
+                                <img src="{{ asset('img/blog/blog-author.png') }}" alt="Blog Author Image">
                             </div>
                             <div class="media-body">
                                 <h3 class="author-name"><a href="team-details.html">William Benjamin</a></h3>
-                                <span class="author-desig">Author</span>
-                                <p class="author-text">We offer discounted membership options for students and seniors who want to prioritize their health and fitness. These specialized in memberships are designed</p>
+                                <span class="author-desig">Autor</span>
+                                <p class="author-text">Oferecemos opções de assinatura com desconto para estudantes e idosos que desejam priorizar sua saúde e preparo físico. Estes especializados em associações são projetados</p>
                             </div>
                         </div>
                     </div>
                     <div class="comments-wrap">
-                        <h2 class="blog-inner-title">3 Comments</h2>
+                        <h2 class="blog-inner-title">3 Comentários</h2>
                         <ul class="comment-list">
                             <li class="comment-item">
                                 <div class="post-comment">
                                     <div class="comment-avater">
-                                        <img src="assets/img/blog/blog_comment1.png" alt="Comment Author">
+                                        <img src="{{ asset('img/blog/blog_comment1.png') }}" alt="Comment Author">
                                     </div>
                                     <div class="comment-content">
-                                        <span class="commented-on"><i class="fal fa-calendar-alt"></i>15 JUN, 2023</span>
+                                        <span class="commented-on"><i class="fal fa-calendar-alt"></i>15 DE JUNHO DE 2023</span>
                                         <h3 class="name">Daniel Adam</h3>
-                                        <p class="text">Collaboratively empower multifunctional e-commerce for prospective applications. Seamlessly productivate plug-and-play markets whereas synergistic scenarios.</p>
+                                        <p class="text">Capacite de forma colaborativa o comércio eletrônico multifuncional para aplicações potenciais. Produza perfeitamente mercados plug-and-play em cenários sinérgicos.</p>
                                         <div class="reply_and_edit">
-                                            <a href="blog-details.html" class="reply-btn">Reply <i class="far fa-reply"></i></a>
+                                            <a href="{{ url('/blog-detalhes') }}" class="reply-btn">Responder <i class="far fa-reply"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -108,14 +108,14 @@
                                     <li class="comment-item">
                                         <div class="post-comment">
                                             <div class="comment-avater">
-                                                <img src="assets/img/blog/blog_comment2.png" alt="Comment Author">
+                                                <img src="{{ asset('img/blog/blog_comment2.png') }}" alt="Comment Author">
                                             </div>
                                             <div class="comment-content">
-                                                <span class="commented-on"><i class="fal fa-calendar-alt"></i>15 JUN, 2023</span>
+                                                <span class="commented-on"><i class="fal fa-calendar-alt"></i>15 DE JUNHO DE 2023</span>
                                                 <h3 class="name">Zenelia Lozhe</h3>
-                                                <p class="text">Collaboratively empower multifunctional e-commerce for prospective application mlessly productivate</p>
+                                                <p class="text">Capacite de forma colaborativa o comércio eletrônico multifuncional para aplicações em potencial e produtividade sem esforço</p>
                                                 <div class="reply_and_edit">
-                                                    <a href="blog-details.html" class="reply-btn">Reply <i class="far fa-reply"></i></a>
+                                                    <a href="blog-details.html" class="reply-btn">Responder <i class="far fa-reply"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -125,14 +125,14 @@
                             <li class="comment-item">
                                 <div class="post-comment">
                                     <div class="comment-avater">
-                                        <img src="assets/img/blog/blog_comment3.png" alt="Comment Author">
+                                        <img src="{{ asset('img/blog/blog_comment3.png') }}" alt="Comment Author">
                                     </div>
                                     <div class="comment-content">
-                                        <span class="commented-on"><i class="fal fa-calendar-alt"></i>15 JUN, 2023</span>
+                                        <span class="commented-on"><i class="fal fa-calendar-alt"></i>15 DE JUNHO DE 2023</span>
                                         <h3 class="name">John Smith</h3>
-                                        <p class="text">Collaboratively empower multifunctional e-commerce for prospective applications. Seamlessly productivate plug-and-play markets whereas synergistic scenarios.</p>
+                                        <p class="text">Capacite de forma colaborativa o comércio eletrônico multifuncional para aplicações potenciais. Produza perfeitamente mercados plug-and-play em cenários sinérgicos.</p>
                                         <div class="reply_and_edit">
-                                            <a href="blog-details.html" class="reply-btn">Reply <i class="far fa-reply"></i></a>
+                                            <a href="blog-details.html" class="reply-btn">Responder <i class="far fa-reply"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -141,23 +141,23 @@
                         <!-- Comment Form -->
                         <div class="comment-form bg-smoke2 mb-30">
                             <div class="form-title">
-                                <h3 class="blog-inner-title"> Leave a Reply</h3>
+                                <h3 class="blog-inner-title"> Deixe uma resposta</h3>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <input type="text" placeholder="Your Name" class="form-control style-white">
+                                    <input type="text" placeholder="Seu nome" class="form-control style-white">
                                     <i class="fal fa-user"></i>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input type="text" placeholder="Email Address" class="form-control style-white">
+                                    <input type="text" placeholder="Endereço de email" class="form-control style-white">
                                     <i class="fal fa-envelope"></i>
                                 </div>
                                 <div class="col-12 form-group">
-                                    <textarea placeholder="Type Your Message" class="form-control style-white"></textarea>
+                                    <textarea placeholder="Deixe sua mensagem" class="form-control style-white"></textarea>
                                     <i class="fal fa-pencil"></i>
                                 </div>
                                 <div class="col-12 form-group mb-0">
-                                    <button class="btn">Get a Quote</button>
+                                    <button class="btn">Obtenha uma cotação</button>
                                 </div>
                             </div>
                         </div>
@@ -175,39 +175,39 @@
                         </div>
 
                         <div class="widget">
-                            <h3 class="widget_title">Recent Posts</h3>
+                            <h3 class="widget_title">Postagens recentes</h3>
                             <div class="recent-post-wrap">
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post1.png" alt="Blog Image"></a>
+                                        <a href="{{ url('/blog-detalhes') }}"><img src="{{ asset('img/blog/recent-post1.png') }}" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Essential Strategies for Maximizing Your</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="{{ url('/blog-detalhes') }}">Estratégias Essenciais Para Maximizar Seu</a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="blog.html">25 Jun, 2023</a>
+                                            <a href="{{ url('/blog') }}blog.html">25 DE JUNHO DE 2023</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post2.png" alt="Blog Image"></a>
+                                        <a href="{{ url('/blog-detalhes') }}"><img src="{{ asset('img/blog/recent-post2.png') }}" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Functional training into
-                                            your Routine...</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="{{ url('/blog-detalhes') }}blog-details.html">
+                                            Treinamento Funcional Na Sua Rotina...</a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="blog.html">25 Jun, 2023</a>
+                                            <a href="{{ url('/blog') }}">25 DE JUNHO DE 2023</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post3.png" alt="Blog Image"></a>
+                                        <a href="{{ url('/blog-detalhes') }}"><img src="{{ asset('img/blog/recent-post3.png') }}" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Nutrition Tips Advice for Gym Goers</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="{{ url('/blog-detalhes') }}">Conselhos Sobre Dicas De Nutrição Para Frequentadores De Academia</a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="blog.html">25 Jun, 2023</a>
+                                            <a href="{{ url('/blog') }}">25 DE JUNHO DE 2023</a>
                                         </div>
                                     </div>
                                 </div>
@@ -215,58 +215,59 @@
                         </div>
 
                         <div class="widget widget_categories">
-                            <h3 class="widget_title">Categories</h3>
+                            <h3 class="widget_title">Categorias</h3>
                             <ul>
                                 <li>
-                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>Boxing Training</a>
+                                    <a href="{{ url('/blog') }}"><i class="fa-solid fa-arrow-right"></i>Treinamento de boxe</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>Body Building Class</a>
+                                    <a href="{{ url('/blog') }}"><i class="fa-solid fa-arrow-right"></i>Aula de musculação
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>Meditation Class</a>
+                                    <a href="{{ url('/blog') }}"><i class="fa-solid fa-arrow-right"></i>Aula de Meditação</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>Mental Yoga Training</a>
+                                    <a href="{{ url('/blog') }}"><i class="fa-solid fa-arrow-right"></i>Treinamento de ioga mental</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html"><i class="fa-solid fa-arrow-right"></i>CrossFit Body Class</a>
+                                    <a href="{{ url('/blog') }}"><i class="fa-solid fa-arrow-right"></i>Classe Corporal CrossFit</a>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="widget widget_gallery">
-                            <h3 class="widget_title">Project Gallery</h3>
+                            <h3 class="widget_title">Galeria de Projetos</h3>
                             <div class="insta-feed">
-                                <a href="blog.html"><img src="assets/img/widget/widget1-1.png" alt="img">
+                                <a href="{{ url('/blog') }}"><img src="{{ asset('img/widget/widget1-1.png') }}" alt="img">
                                 <i class="fab fa-instagram"></i></a>
-                                <a href="blog.html"><img src="assets/img/widget/widget1-2.png" alt="img">
+                                <a href="{{ url('/blog') }}"><img src="{{ asset('img/widget/widget1-2.png') }}" alt="img">
                                 <i class="fab fa-instagram"></i></a>
-                                <a href="blog.html"><img src="assets/img/widget/widget1-3.png" alt="img">
+                                <a href="{{ url('/blog') }}"><img src="{{ asset('img/widget/widget1-3.png') }}" alt="img">
                                 <i class="fab fa-instagram"></i></a>
-                                <a href="blog.html"><img src="assets/img/widget/widget1-4.png" alt="img">
+                                <a href="{{ url('/blog') }}"><img src="{{ asset('img/widget/widget1-4.png') }}" alt="img">
                                 <i class="fab fa-instagram"></i></a>
-                                <a href="blog.html"><img src="assets/img/widget/widget1-5.png" alt="img">
+                                <a href="{{ url('/blog') }}"><img src="{{ asset('img/widget/widget1-5.png') }}" alt="img">
                                 <i class="fab fa-instagram"></i></a>
-                                <a href="blog.html"><img src="assets/img/widget/widget1-6.png" alt="img">
+                                <a href="{{ url('/blog') }}"><img src="{{ asset('img/widget/widget1-6.png') }}" alt="img">
                                     <i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
 
                         <div class="widget widget_tag_cloud">
-                            <h3 class="widget_title">Popular Tags</h3>
+                            <h3 class="widget_title">Tags Populares</h3>
                             <div class="tagcloud">
-                                <a href="blog.html">ADVICE</a>
-                                <a href="blog.html">FIT</a>
-                                <a href="blog.html">AUTHOR</a>
-                                <a href="blog.html">FAMILY</a>
-                                <a href="blog.html">Fitmas</a>
-                                <a href="blog.html">HEALTH</a>
-                                <a href="blog.html">FITNESS</a>
-                                <a href="blog.html">GYM</a>
-                                <a href="blog.html">JUDGE</a>
-                                <a href="blog.html">SOLUTION</a>
-                                <a href="blog.html">TRAINING</a>
+                                <a href="{{ url('/blog') }}">CONSELHO</a>
+                                <a href="{{ url('/blog') }}">AJUSTAR</a>
+                                <a href="{{ url('/blog') }}">AUTOR</a>
+                                <a href="{{ url('/blog') }}">FAMÍLIA</a>
+                                <a href="{{ url('/blog') }}">VIVABEM</a>
+                                <a href="{{ url('/blog') }}">SAÚDE/a>
+                                <a href="{{ url('/blog') }}">FITNESS</a>
+                                <a href="{{ url('/blog') }}">ACADEMIA</a>
+                                <a href="{{ url('/blog') }}">JUÍZ</a>
+                                <a href="{{ url('/blog') }}">SOLUÇÃO</a>
+                                <a href="{{ url('/blog') }}">TREINAMENTO</a>
                             </div>
                         </div>
                     </aside>

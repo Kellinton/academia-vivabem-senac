@@ -228,6 +228,12 @@
                                             <li><a href="{{ url('/pilates') }}">Pilates</a></li>
                                             <li><a href="{{ url('/yoga') }}">Yoga</a></li>
                                             <li><a href="{{ url('/treinamento-funcional') }}">Treinamento Funcional</a></li>
+                                            <li><a href="{{ url('/zumba') }}">Zumba</a></li>
+                                            <li><a href="{{ url('/natacao') }}">Natação</a></li>
+                                            <li><a href="{{ url('/artes-marciais') }}">Artes Marciais</a></li>
+                                            <li><a href="{{ url('/alongamento-flexibilidade') }}">Alongamento e Flexibilidade</a></li>
+                                            <li><a href="{{ url('/treino-cardiovascular') }}">Treino Cardiovascular</a></li>
+
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">

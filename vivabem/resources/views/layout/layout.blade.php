@@ -221,7 +221,7 @@
                                         <a href="{{ url('/sobre') }}">Sobre</a>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="{{ url('/service') }}">Modalidade</a>
+                                        <a href="{{ url('/modalidade') }}">Modalidades</a>
                                         <ul class="sub-menu">
                                             <li><a href="{{ url('/modalidade/musculacao') }}">Musculação</a></li>
                                             <li><a href="{{ url('/aerobica') }}">Aeróbica</a></li>

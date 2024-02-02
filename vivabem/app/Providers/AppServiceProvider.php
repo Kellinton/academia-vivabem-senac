@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -21,8 +22,11 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot() // decide qual classe será carregada
     {
-        //
+        Relation::morphMap([
+            'aluno'         => 'App\Models\Aluno',
+            'funcionario'   => 'App\Models\Funcionario',
+        ]);
     }
 }

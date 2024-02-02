@@ -2024,13 +2024,18 @@ textarea.is-invalid {
   display: inline-block;
   border: none;
   text-align: center;
-  background-color: transparent;
+  background-color: var(--theme-color);
   color: var(--white-color);
   font-family: var(--title-font);
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
   padding: 18.5px 35px 20.5px;
+}
+
+.btn:focus{
+    background-color: var(--theme-color);
+    color: var(--white-color);
 }
 .btn::before {
   position: absolute;

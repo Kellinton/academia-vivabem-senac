@@ -1,5 +1,5 @@
 <?php
-
+// responsável por fazer o carregamento e mapeamento. Age como um filtro entre as requisições do cliente e a aplicação
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;

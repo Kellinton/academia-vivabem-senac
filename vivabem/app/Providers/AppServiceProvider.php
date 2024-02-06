@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot() // decide qual classe será carregada
+    public function boot()
     {
         Relation::morphMap([
             'aluno'         => 'App\Models\Aluno',
@@ -30,3 +30,4 @@ class AppServiceProvider extends ServiceProvider
         ]);
     }
 }
+

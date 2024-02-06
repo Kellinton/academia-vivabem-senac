@@ -1,10 +1,10 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Administrativo')
+@section('title', 'Aluno')
 
 @section('conteudo')
 
-<h1>Administrativo</h1>
+<h1>Aluno</h1>
 
 <a href="{{ route('sair') }}" class="btn btn-danger">Sair</a>
 

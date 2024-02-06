@@ -39,7 +39,7 @@ class DashboardController extends Controller
 
 
 
-        if(!$usuario) {                        // emailUsuario
+        if(!$usuario) {
             return back()->withErrors(['email' => 'O email informado não está cadastrado']);
         }
 
@@ -55,13 +55,43 @@ class DashboardController extends Controller
 
         if($tipoUsuario instanceof Aluno) {
 
-            dd($tipoUsuario);
+            // dd($tipoUsuario);
+                // variável de sessão
+                session([
+                    'id'           =>  $tipoUsuario->idAluno,
+                    'nome'         =>  $tipoUsuario->nomeAluno,
+                    'tipo_usuario' =>  'Aluno',
+                ]);
 
-        }elseif($tipoUsuario instanceof Funcionario){
+                return redirect()->route('dashboard.alunos');
 
-            dd($tipoUsuario);
-        }else{
-            dd("chegou");
+
+            }elseif($tipoUsuario instanceof Funcionario){
+
+                if($tipoUsuario->tipoFuncionario == 'admin'){
+
+                    session([
+                        'id'                =>  $tipoUsuario->idFuncionario,
+                        'nome'              =>  $tipoUsuario->nomeFuncionario,
+                        'tipoFuncionario'   =>  $tipoUsuario->tipoFuncionario,
+                    ]);
+
+                    return redirect()->route('dashboard.alunos');
+
+                }elseif($tipoUsuario->tipoFuncionario == 'instrutor'){
+
+                    session([
+                        'id'                =>  $tipoUsuario->idFuncionario,
+                        'nome'              =>  $tipoUsuario->nomeFuncionario,
+                        'tipoFuncionario'   =>  $tipoUsuario->tipoFuncionario,
+                    ]);
+
+                    return redirect()->route('dashboard.alunos');
+
+                }
+
         }
+
+        return back()->withErrors(['email' => 'Erro desconhecido de autenticação']); // retorna a página de origem com uma mensagem de erro
     }
 }

@@ -32,8 +32,6 @@ class DashboardController extends Controller
         $email = $request->get('email');
         $senha = $request->get('password');
 
-        // echo "E-mail: $email | Senha: $senha";
-        // echo "<br>";
 
         $usuario = Usuario::where('emailUsuario', $email)->first();
 
@@ -50,15 +48,18 @@ class DashboardController extends Controller
         // dd($usuario); // validação
 
         $tipoUsuario = $usuario->tipo_usuario;
+     
 
-        // dd($tipoUsuario);
+        session([
+            'email' => $usuario->emailUsuario,
+        ]);
 
         if($tipoUsuario instanceof Aluno) {
 
-            // dd($tipoUsuario);
+
                 // variável de sessão
                 session([
-                    'id'           =>  $tipoUsuario->idAluno,
+                    'id'           =>  $tipoUsuario->id,
                     'nome'         =>  $tipoUsuario->nomeAluno,
                     'tipo_usuario' =>  'Aluno',
                 ]);
@@ -68,25 +69,26 @@ class DashboardController extends Controller
 
             }elseif($tipoUsuario instanceof Funcionario){
 
-                if($tipoUsuario->tipoFuncionario == 'admin'){
+
+                if($tipoUsuario->tipo_funcionario == 'admin'){
 
                     session([
-                        'id'                =>  $tipoUsuario->idFuncionario,
+                        'id'                =>  $tipoUsuario->id,
                         'nome'              =>  $tipoUsuario->nomeFuncionario,
-                        'tipoFuncionario'   =>  $tipoUsuario->tipoFuncionario,
+                        'tipoFuncionario'   =>  $tipoUsuario->tipo_funcionario,
                     ]);
 
-                    return redirect()->route('dashboard.alunos');
+                    return redirect()->route('dashboard.administrativo');
 
-                }elseif($tipoUsuario->tipoFuncionario == 'instrutor'){
+                }elseif($tipoUsuario->tipo_funcionario == 'instrutor'){
 
                     session([
-                        'id'                =>  $tipoUsuario->idFuncionario,
+                        'id'                =>  $tipoUsuario->id,
                         'nome'              =>  $tipoUsuario->nomeFuncionario,
-                        'tipoFuncionario'   =>  $tipoUsuario->tipoFuncionario,
+                        'tipoFuncionario'   =>  $tipoUsuario->tipo_funcionario,
                     ]);
 
-                    return redirect()->route('dashboard.alunos');
+                    return redirect()->route('dashboard.instrutor');
 
                 }
 
